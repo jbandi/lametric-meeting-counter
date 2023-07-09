@@ -1,6 +1,6 @@
-export const handler = (_req: Request): Response => {
-  const meetingStart = new Date().toLocaleTimeString();
+const meetingStart = new Date().toLocaleTimeString();
 
+export const handler = (_req: Request): Response => {
   const response = {
     frames: [
       {

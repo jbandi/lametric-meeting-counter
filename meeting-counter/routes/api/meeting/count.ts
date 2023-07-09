@@ -1,6 +1,4 @@
-import { HandlerContext } from "$fresh/server.ts";
-
-export const handler = (_req: Request, _ctx: HandlerContext): Response => {
+export const handler = (_req: Request): Response => {
   const response = {
     frames: [
       {

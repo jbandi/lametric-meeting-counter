@@ -1,9 +1,14 @@
 export const handler = (_req: Request): Response => {
+  const meetingStart = Date.now();
+
   const response = {
     frames: [
       {
         icon: "34",
-        text: "Hello World!",
+        text: "Meeting Cost",
+      },
+      {
+        text: `Meeting Start Time: ${meetingStart}`,
       },
     ],
   };

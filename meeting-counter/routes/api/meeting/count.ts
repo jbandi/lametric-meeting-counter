@@ -1,5 +1,5 @@
 export const handler = (_req: Request): Response => {
-  const meetingStart = Date.now();
+  const meetingStart = new Date().toLocaleTimeString();
 
   const response = {
     frames: [
